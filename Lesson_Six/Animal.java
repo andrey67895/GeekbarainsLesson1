@@ -18,13 +18,13 @@ public class Animal {
 
     public void toSwim(String name, Integer swimmingLength, Integer maxSwimLength) {
         if (swimmingLength > maxSwimLength) {
-            System.out.println(name + " проплыл 10 метров, устал и вернулся на берег");
+            System.out.println(name + " проплыл 10 метров, устал и вернулся на берег\n");
         } else if (swimmingLength < 0 && swimmingLength < Math.abs(maxSwimLength)) {
-            System.out.println(name + " убежал от берега на " + Math.abs(swimmingLength) + " м.");
+            System.out.println(name + " убежал от берега на " + Math.abs(swimmingLength) + " м.\n");
         } else if (swimmingLength < 0 && swimmingLength > Math.abs(maxSwimLength)) {
-            System.out.println(name + " убежал от берега на " + Math.abs(swimmingLength) + " м.");
+            System.out.println(name + " убежал от берега на " + Math.abs(swimmingLength) + " м.\n");
         } else {
-            System.out.println(name + " проплыл " + swimmingLength + " м.");
+            System.out.println(name + " проплыл " + swimmingLength + " м.\n");
         }
     }
 }
